@@ -1,4 +1,4 @@
-
+let didShowMessage = false;
 
 function showMessage(){
 	const message = 'I Like Logs';
@@ -7,3 +7,5 @@ function showMessage(){
 		console.log(message);
 	}
 }
+
+showMessage();
