@@ -17,7 +17,7 @@ module.exports = {
 			test:/\.(sa|sc|c)ss$/,
 			use: [
 			{
-				loader: extract.loader
+				loader: 'extract.loader'
 			},
 			{
 				loader: 'css-loader'

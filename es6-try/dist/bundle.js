@@ -93,7 +93,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("const need = \"Clothes, alot of them!\";\nconsole.log(`All I need is ${need}`);\n\nconst sum = arr => {\n\tlet sum = 0;\n\tfor (const ele of arr) {\n\t\tsum += ele;\n\t}\n\tconsole.log(`The numbers to add are : ${arr}`);\n\tconsole.log(`And their sum is ${sum}`);\n};\n\nsum([10, 20, 30, 40, 50, 60, 70]);\n\n//# sourceURL=webpack:///./app/main.js?");
+eval("// const need = \"Clothes, alot of them!\";\n// console.log(`All I need is ${need}`);\n\n// const sum = (arr) => {\n// \tlet sum = 0;\n// \tfor(const ele of arr){\n// \t\tsum += ele;\n// \t}\n// \tconsole.log(`The numbers to add are : ${arr}`);\n// \tconsole.log(`And their sum is ${sum}`);\n// }\n\n// sum([10, 20, 30, 40, 50, 60, 70]);\n\n// function fn() {\n// \tconsole.log(this);\n// }\n\n// fn();\n\n// var newfn = () => console.log(this);\n\n// newfn();\n\n// function compare(number1 = 10, number2){\n// \tconsole.log(number2);\n// \treturn number1 == number2;\n// }\n\n// console.log(compare(10));\n\nlet results = [12, 34, 565];\n\nfor (let result of results) {\n\tconsole.log(result);\n}\n\n//# sourceURL=webpack:///./app/main.js?");
 
 /***/ }),
 
