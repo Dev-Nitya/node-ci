@@ -34,6 +34,7 @@ build/Release
 
 # Dependency directories
 eslint-try/node_modules/
+es6-try/node_modules/
 jspm_packages/
 
 # TypeScript v1 declaration files
