@@ -2,8 +2,12 @@
 
 myfile.runContents();
 
-//Entire body executes in 1 tick
-while() { //event loop pseudo code
+function shouldContinue(){
+
+}
+
+//Entire body executes in one 'tick'
+while(shouldContinue()) { //event loop pseudo code
 
 }
 
