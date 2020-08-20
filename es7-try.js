@@ -41,3 +41,7 @@ if(users.includes(user1)){
 } else {
 	console.log("Object not found in arr");
 }
+
+let matrix = [ [1,2,3], [4,5,6] ];
+const flatArray = matrix.flat(1);
+console.log(flatArray);
