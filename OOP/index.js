@@ -20,8 +20,8 @@ function Circle(radius){
 	}
 }
 
-Circle.call({}, 1);
-Circle.apply({}, [1, 2, 3]);
+// Circle.call({}, 1);
+// Circle.apply({}, [1, 2, 3]);
 
 // const Circle1 = new Function('radius', `
 // 	this.radius = radius;
@@ -34,3 +34,15 @@ Circle.apply({}, [1, 2, 3]);
 
 const another = new Circle(10);
 
+another.location = { x : 1 };
+
+for(let key in another){
+	console.log(key, another[key]);
+}
+
+let keys = Object.keys(another);
+console.log(keys);
+
+if('radius' in another){
+	console.log("Circle has radius");
+}

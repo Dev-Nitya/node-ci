@@ -4,3 +4,6 @@ let x = {
 let y = x;
 
 x.value = 20;
+
+//Primitive types are copied by value
+//Reference types are copied by reference
