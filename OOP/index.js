@@ -15,9 +15,23 @@
 //constructor
 function Circle(radius){
 	this.radius = radius;
+	//private
+	let defaultLocation = {
+		x : 0, y : 0
+	};
+	let computeOptimumLocation = function() {
+
+	};
+	Object.defineProperty(this, 'defaultLocation', {
+		get : function() {
+			return defaultLocation;
+		}
+	})
+	//private method end
 	this.draw = function() {
+		computeOptimumLocation();
 		console.log('draw');
-	}
+	};
 }
 
 // Circle.call({}, 1);
@@ -34,15 +48,15 @@ function Circle(radius){
 
 const another = new Circle(10);
 
-another.location = { x : 1 };
+// another.location = { x : 1 };
 
-for(let key in another){
-	console.log(key, another[key]);
-}
+// for(let key in another){
+// 	console.log(key, another[key]);
+// }
 
-let keys = Object.keys(another);
-console.log(keys);
+// let keys = Object.keys(another);
+// console.log(keys);
 
-if('radius' in another){
-	console.log("Circle has radius");
-}
+// if('radius' in another){
+// 	console.log("Circle has radius");
+// }
