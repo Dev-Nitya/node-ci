@@ -7,16 +7,27 @@ Shape.prototype.duplicate = function() {
 }
 
 
-function Circle(radius) {
-	super();
+function extend(Child, Parent) {
+	Child.prototype = Object.create(Parent.prototype);
+	Child.prototype.constructor = Child;
+}
+
+function Circle(radius, color) {
+	Shape.call(this, color);
 	this.radius = radius;
 }
 
-Circle.prototype = Object.create(Shape.prototype);
+extend(Circle, Shape);
 
 Circle.prototype.draw = function() {
 	console.log("Draw");
 }
 
+function Sqaure(size) {
+	this.size = size;
+}
+
+extend(Sqaure, Shape);
+
 const S = new Shape();
-const C = new Circle(1);
+const C = new Circle(1, 'red');
