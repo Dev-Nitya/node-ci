@@ -1,4 +1,6 @@
-function Shape() {}
+function Shape(color) {
+	this.color = color;
+}
 
 Shape.prototype.duplicate = function() {
 	console.log("duplicate");
@@ -6,6 +8,7 @@ Shape.prototype.duplicate = function() {
 
 
 function Circle(radius) {
+	super();
 	this.radius = radius;
 }
 
