@@ -1,21 +1,6 @@
-
-// const person: {
-// 	name: String;
-// 	age: Number
-// } = {
-// 	name : 'Nitya',
-// 	age : 25
-// };
-
-const person = {
-	name : 'Nitya',
-	age : 25,
-	hobbies : [ 'cooking', 'reading' ]
-};
-
-let activities : string[];
-activities = ['sports'];
-
-for(const hobby of person.hobbies){
-	console.log(hobby);
+function combine(input1: number | string, input2: number | string) {
+	return input1 + input2;
 }
+
+const combinedAges = combine(30, 26);
+console.log(combinedAges);
