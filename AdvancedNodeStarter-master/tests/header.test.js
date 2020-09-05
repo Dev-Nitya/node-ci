@@ -11,7 +11,7 @@ beforeEach(async () => { //this will run before every test
 });
 
 afterEach(async () => {
-	//await browser.close();
+	await browser.close();
 });
 
 test('the header has the correct text', async () => {
@@ -27,7 +27,7 @@ test('clicking login starts Oauth flow', async () => {
 	expect(url).toMatch('/accounts\.google\.com/');
 });
 
-test.only('when signed in, shows logout button', async () => {
+test('when signed in, shows logout button', async () => {
 	const id = '5f40f49c15d4743498245c8f';
 
 	const Buffer = require('safe-buffer').Buffer;
@@ -49,4 +49,9 @@ test.only('when signed in, shows logout button', async () => {
 	await page.setCookie({ name : 'session.sig', value : sig });
 
 	await page.goto('localhost:3000');
+	await page.waitFor('a[href="auth/logout"]');
+
+	const text = await page.$eval('a[href="auth/logout"]', el => el.innerHTML);
+
+	expect(text).toEqual('logout');
 });
