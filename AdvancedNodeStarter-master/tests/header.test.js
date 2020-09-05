@@ -11,4 +11,5 @@ test('We can launch a browser', async () => {
 		headless : false //headless mode means browser will open without GUI
 	});
 	const page = await browser.newPage();
+	await page.goto('localhost:3000');
 });
