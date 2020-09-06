@@ -36,7 +36,6 @@ test('when signed in, shows logout button', async () => {
 
 	await page.setCookie({ name : 'session', value : session });
 	await page.setCookie({ name : 'session.sig', value : sig });
-
 	await page.goto('localhost:3000');
 	await page.waitFor('a[href="auth/logout"]');
 
