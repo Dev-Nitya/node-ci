@@ -4,5 +4,7 @@ module.exports = {
   googleClientSecret: '8mkniDQOqacXtlRD3gA4n2az',
   mongoURI: 'mongodb://localhost/blog_everyone?retryWrites=true',
   cookieKey: '123123123',
-  redisUrl: 'redis://127.0.0.1:6379'
+  redisUrl: 'redis://127.0.0.1:6379',
+  accessKeyId: 'Aws_Access_Key',
+  secretAccessKey: 'Aws_Secret_Key'
 };
